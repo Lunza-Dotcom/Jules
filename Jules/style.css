@@ -1,0 +1,92 @@
+/* Global Resets & Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529; /* Dark gray text */
+  background-color: #FFFFFF; /* White background */
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Layout Structure Styling */
+/* Header Styles */
+header {
+  background-color: #005A9C; /* Deep Blue */
+  color: #FFFFFF; /* White text */
+  padding: 1em 0; /* Vertical padding */
+  border-bottom: 3px solid #B08D57; /* Muted Gold accent */
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+  text-align: center; /* Center the nav items */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Spacing between items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* No margin for the last item */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF; /* White text for links in blue header */
+  padding: 10px 15px; /* Updated padding */
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #B08D57; /* Muted Gold on hover */
+  color: #000000; /* Black text on hover */
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+  color: #005A9C; /* Deep Blue */
+}
+
+/* Main Content Area */
+main {
+  min-height: 70vh; /* Ensure content pushes footer down */
+  padding: 20px 0; /* Adjusted padding */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343A40; /* Dark Gray/Black */
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  padding: 2em 0; /* Increased padding */
+  margin-top: 30px; /* Margin above footer */
+}
+
+/* Icon Placeholder Style */
+.icon-placeholder {
+  margin-right: 5px; /* Space between icon and text */
+  font-size: 1.1em; /* Slightly larger if using emoji/character */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: block; /* Stack nav items vertically */
+    margin-right: 0;
+    margin-bottom: 10px; /* Add some space between stacked items */
+    text-align: center; /* Center text for stacked items */
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Optional: Adjust header padding for smaller screens */
+  header {
+    padding: 0.5em 0;
+  }
+}
